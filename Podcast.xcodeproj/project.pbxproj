@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		5CDF709E2C2EC412006E87C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDF709D2C2EC412006E87C9 /* AppDelegate.swift */; };
 		5CDF70A02C2EC412006E87C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDF709F2C2EC412006E87C9 /* SceneDelegate.swift */; };
-		5CDF70A22C2EC412006E87C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDF70A12C2EC412006E87C9 /* ViewController.swift */; };
-		5CDF70A52C2EC412006E87C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CDF70A32C2EC412006E87C9 /* Main.storyboard */; };
+		5CDF70A22C2EC412006E87C9 /* MainTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDF70A12C2EC412006E87C9 /* MainTabbarController.swift */; };
 		5CDF70A72C2EC413006E87C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CDF70A62C2EC413006E87C9 /* Assets.xcassets */; };
 		5CDF70AA2C2EC413006E87C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CDF70A82C2EC413006E87C9 /* LaunchScreen.storyboard */; };
 		5CDF70B52C2EC413006E87C9 /* PodcastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDF70B42C2EC413006E87C9 /* PodcastTests.swift */; };
 		5CDF70BF2C2EC413006E87C9 /* PodcastUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDF70BE2C2EC413006E87C9 /* PodcastUITests.swift */; };
 		5CDF70C12C2EC413006E87C9 /* PodcastUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDF70C02C2EC413006E87C9 /* PodcastUITestsLaunchTests.swift */; };
+		5CDF70D02C2ECD6D006E87C9 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDF70CF2C2ECD6D006E87C9 /* FavoriteViewController.swift */; };
+		5CDF70D22C2ECD76006E87C9 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDF70D12C2ECD76006E87C9 /* SearchViewController.swift */; };
+		5CDF70D42C2ECD8D006E87C9 /* DownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDF70D32C2ECD8D006E87C9 /* DownloadViewController.swift */; };
+		5CDF70D72C2EDB9F006E87C9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 5CDF70D62C2EDB9F006E87C9 /* Alamofire */; };
+		5CDF70DA2C2EE2B4006E87C9 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDF70D92C2EE2B4006E87C9 /* SearchCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +43,7 @@
 		5CDF709A2C2EC412006E87C9 /* Podcast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Podcast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CDF709D2C2EC412006E87C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CDF709F2C2EC412006E87C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5CDF70A12C2EC412006E87C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5CDF70A42C2EC412006E87C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5CDF70A12C2EC412006E87C9 /* MainTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarController.swift; sourceTree = "<group>"; };
 		5CDF70A62C2EC413006E87C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CDF70A92C2EC413006E87C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5CDF70AB2C2EC413006E87C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +52,10 @@
 		5CDF70BA2C2EC413006E87C9 /* PodcastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PodcastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CDF70BE2C2EC413006E87C9 /* PodcastUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastUITests.swift; sourceTree = "<group>"; };
 		5CDF70C02C2EC413006E87C9 /* PodcastUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5CDF70CF2C2ECD6D006E87C9 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		5CDF70D12C2ECD76006E87C9 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		5CDF70D32C2ECD8D006E87C9 /* DownloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadViewController.swift; sourceTree = "<group>"; };
+		5CDF70D92C2EE2B4006E87C9 /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CDF70D72C2EDB9F006E87C9 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,13 +107,10 @@
 		5CDF709C2C2EC412006E87C9 /* Podcast */ = {
 			isa = PBXGroup;
 			children = (
-				5CDF709D2C2EC412006E87C9 /* AppDelegate.swift */,
-				5CDF709F2C2EC412006E87C9 /* SceneDelegate.swift */,
-				5CDF70A12C2EC412006E87C9 /* ViewController.swift */,
-				5CDF70A32C2EC412006E87C9 /* Main.storyboard */,
-				5CDF70A62C2EC413006E87C9 /* Assets.xcassets */,
-				5CDF70A82C2EC413006E87C9 /* LaunchScreen.storyboard */,
+				5CDF70D82C2EE2A6006E87C9 /* View */,
 				5CDF70AB2C2EC413006E87C9 /* Info.plist */,
+				5CDF70CD2C2ECCAC006E87C9 /* Controller */,
+				5CDF70CE2C2ECCB2006E87C9 /* Files */,
 			);
 			path = Podcast;
 			sourceTree = "<group>";
@@ -127,6 +132,36 @@
 			path = PodcastUITests;
 			sourceTree = "<group>";
 		};
+		5CDF70CD2C2ECCAC006E87C9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5CDF70A12C2EC412006E87C9 /* MainTabbarController.swift */,
+				5CDF70CF2C2ECD6D006E87C9 /* FavoriteViewController.swift */,
+				5CDF70D12C2ECD76006E87C9 /* SearchViewController.swift */,
+				5CDF70D32C2ECD8D006E87C9 /* DownloadViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5CDF70CE2C2ECCB2006E87C9 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				5CDF709D2C2EC412006E87C9 /* AppDelegate.swift */,
+				5CDF709F2C2EC412006E87C9 /* SceneDelegate.swift */,
+				5CDF70A62C2EC413006E87C9 /* Assets.xcassets */,
+				5CDF70A82C2EC413006E87C9 /* LaunchScreen.storyboard */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		5CDF70D82C2EE2A6006E87C9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5CDF70D92C2EE2B4006E87C9 /* SearchCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +178,9 @@
 			dependencies = (
 			);
 			name = Podcast;
+			packageProductDependencies = (
+				5CDF70D62C2EDB9F006E87C9 /* Alamofire */,
+			);
 			productName = Podcast;
 			productReference = 5CDF709A2C2EC412006E87C9 /* Podcast.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +253,9 @@
 				Base,
 			);
 			mainGroup = 5CDF70912C2EC412006E87C9;
+			packageReferences = (
+				5CDF70D52C2EDB9F006E87C9 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 5CDF709B2C2EC412006E87C9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,7 +274,6 @@
 			files = (
 				5CDF70AA2C2EC413006E87C9 /* LaunchScreen.storyboard in Resources */,
 				5CDF70A72C2EC413006E87C9 /* Assets.xcassets in Resources */,
-				5CDF70A52C2EC412006E87C9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +298,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CDF70A22C2EC412006E87C9 /* ViewController.swift in Sources */,
+				5CDF70D22C2ECD76006E87C9 /* SearchViewController.swift in Sources */,
+				5CDF70A22C2EC412006E87C9 /* MainTabbarController.swift in Sources */,
 				5CDF709E2C2EC412006E87C9 /* AppDelegate.swift in Sources */,
+				5CDF70DA2C2EE2B4006E87C9 /* SearchCell.swift in Sources */,
+				5CDF70D02C2ECD6D006E87C9 /* FavoriteViewController.swift in Sources */,
+				5CDF70D42C2ECD8D006E87C9 /* DownloadViewController.swift in Sources */,
 				5CDF70A02C2EC412006E87C9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,14 +341,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5CDF70A32C2EC412006E87C9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5CDF70A42C2EC412006E87C9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5CDF70A82C2EC413006E87C9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -447,7 +483,6 @@
 				INFOPLIST_FILE = Podcast/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -475,7 +510,6 @@
 				INFOPLIST_FILE = Podcast/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -607,6 +641,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5CDF70D52C2EDB9F006E87C9 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5CDF70D62C2EDB9F006E87C9 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CDF70D52C2EDB9F006E87C9 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5CDF70922C2EC412006E87C9 /* Project object */;
 }
