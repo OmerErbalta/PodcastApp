@@ -7,9 +7,13 @@
 
 import Foundation
 import UIKit
+import Kingfisher
 class SearchCell:UITableViewCell{
     
     //MARK: - Properties
+    var result:Podcast?{
+        didSet{configure()}
+    }
     private var photoImageView : UIImageView = {
         let imageView = UIImageView()
         imageView.backgroundColor = .systemPink
@@ -81,5 +85,13 @@ extension SearchCell{
             
             
             ])
+    }
+    private func configure(){
+        guard let result = self.result else{return}
+        let viewModel = SearchViewModel(podcast: result)
+        trackName.text = viewModel.trackName
+        trackCount.text = viewModel.trackCountString
+        artistName.text = viewModel.artistName
+        photoImageView.kf.setImage(with: viewModel.photoImnageUrl)
     }
 }

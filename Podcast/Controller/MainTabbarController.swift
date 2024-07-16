@@ -18,10 +18,11 @@ class MainTabbarController: UITabBarController {
 extension MainTabbarController{
     private func setup(){
         viewControllers = [
-            createViewController(FavoriteViewController(), "Favorite", "play.circle.fill"),
+            createViewController(FavoriteViewController(), "Favorites", "play.circle.fill"),
             createViewController(SearchViewController(), "Search", "magnifyingglass.circle.fill"),
-            createViewController(DownloadViewController(), "Download", "square.stack.fill")
+            createViewController(DownloadViewController(), "Downloads", "square.stack.fill")
         ]
+        tabBar.tintColor = .purple
     }
     private func createViewController(_ rootViewController:UIViewController,_ title:String,_ imageName:String)->UINavigationController{
         
